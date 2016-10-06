@@ -4,7 +4,8 @@ body {
     font-size: 12px;
     color: #292929;
     margin: 0;
-    background: #fcfcfc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAABlBMV…oPmIgJEzFhIiZMxERMmIgJEzFhIiZiwkRMmIgJEzERk8ke1xwJxQlKQNMAAAAASUVORK5CYII=);
+    /*background: #fcfcfc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAABlBMV…oPmIgJEzFhIiZMxERMmIgJEzFhIiZiwkRMmIgJEzERk8ke1xwJxQlKQNMAAAAASUVORK5CYII=);
+    */
 }
 
 .hourline {
@@ -13,7 +14,7 @@ body {
     position: absolute;
     text-align: center;
 }
-.\_24 {
+.hour_ul {
     height: 45px;
     float: left;
     margin: 0;
@@ -22,7 +23,7 @@ body {
     list-style-image: none;
 }
 
-.\_24 li {
+.hour_ul li {
     list-style-type: none;
     list-style-image: none;
     width: 28px;
@@ -44,7 +45,7 @@ body {
     /* border-bottom: 1px solid #8BA3C9; */
 }
 
-.\_24 li.tod_c, li.top_boundary+li {
+.hour_ul li.tod_c, li.top_boundary+li {
     /* background-color: #8FA8CF; */
     background-color: #8BA3C9;
     color: #FFF;
@@ -86,7 +87,7 @@ li.tod_boundary {
     font-size: 125%;
 }
 
-.\_AP li u, .\_24 li i, .\_24 li em, .\_AP li em {
+.hour_ul li i, .hour_ul li em {
     font-size: 70%;
     display: block;
     width: auto;
@@ -94,10 +95,9 @@ li.tod_boundary {
     text-decoration: none;
     font-style: normal;
     position: absolute;
-    left: 3px;
     right: 3px;
-    bottom: 1px;
-    height: 12px;
+    bottom: 4px;
+    height: 20px;
     overflow: hidden;
     background-color: inherit;
     z-index: 5;
@@ -127,5 +127,8 @@ li.tod_c i {
     color: #8BA3C9;
     border-left: none;
     border-right: none;
+}
+.w-border {
+	border-right: 1px solid #8FA8CF;
 }
 
