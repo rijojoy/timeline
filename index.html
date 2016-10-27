@@ -5,8 +5,20 @@
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
 ">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<style>
+  #resizable { width: 150px; height: 150px; padding: 0.5em; z-index:12333; left:350px; }
+  #resizable h3 { text-align: center; margin: 0; }
+  .ui-widget-content {
+    border: 1px solid #a94442;
+    background: none;
+    color: #222222;
+}
+  </style>
 </head>
 <body>
+<div id="resizable" class="ui-widget-content">
+ </div>
 <div class="hourline">
 	<ul class="hour_ul m00">
 
@@ -215,9 +227,12 @@
 </div>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script>
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
+    $('[data-toggle="tooltip"]').tooltip();
+	$( "#resizable" ).draggable().resizable();
 });
 </script>
 </body>
